@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+
+<body>
+Number: {{.}}
+
+{{/* Pipelining is where you can use a func on a value then use another func on it's return value and chain funcs together */}}
+Going to double then square: {{ . | dbl | sqr}}
+
+</body>
+
+</html>
